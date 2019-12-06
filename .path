@@ -1,1 +1,9 @@
 export PATH=$HOME/Development/dtools/sfc:$PATH
+
+# Add Python bin directories to path
+# Note: When Python is upgraded, packages may need to be re-installed
+#       or Python versions managed.
+python3 -m site &> /dev/null && PATH="$PATH:`python3 -m site --user-base`/bin"
+python2 -m site &> /dev/null && PATH="$PATH:`python2 -m site --user-base`/bin"
+
+export PATH

@@ -28,3 +28,6 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Work!
+export MVN_REPO_URL='http://mvn.corp.signalfx.com:8080/archiva'
